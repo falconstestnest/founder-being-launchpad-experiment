@@ -31,4 +31,9 @@ export const MEDIA = {
     alt: "Jimmy James, Founder and Programme Lead of Founder-Being LaunchPad",
     credit: "FOUNDER",
   },
+  brand: {
+    monogram: "/brand/monogram-mint.jpg",
+    horizontal: "/brand/logo-horizontal-mint.jpg",
+    wordmark: "/brand/wordmark-stacked-white.jpg",
+  },
 } as const;

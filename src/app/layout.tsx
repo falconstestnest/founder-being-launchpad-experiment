@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   },
   description: SITE.tagline,
   robots: { index: false, follow: false },
+  icons: {
+    icon: "/brand/monogram-mint.jpg",
+    apple: "/brand/monogram-mint.jpg",
+  },
 };
 
 export default function RootLayout({

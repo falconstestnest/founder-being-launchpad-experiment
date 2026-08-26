@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { COHORT, NAV, NAV_MORE, SITE } from "@/lib/copy";
+import { BrandLockup } from "@/components/BrandLockup";
+import { NAV, NAV_MORE } from "@/lib/copy";
 
 function NavLink({ href, label }: { href: string; label: string }) {
   const path = usePathname();
@@ -23,13 +24,8 @@ function NavLink({ href, label }: { href: string; label: string }) {
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-bg">
-      <div className="mx-auto flex h-12 max-w-5xl items-center justify-between gap-3 px-4 md:px-6">
-        <Link href="/" className="shrink-0 text-sm font-semibold tracking-tight">
-          {SITE.short}
-          <span className="mono ml-2 hidden text-xs font-normal text-muted sm:inline">
-            / {COHORT.label.toLowerCase().replace(" ", "")}
-          </span>
-        </Link>
+      <div className="mx-auto flex h-14 max-w-5xl items-center justify-between gap-3 px-4 md:h-16 md:px-6">
+        <BrandLockup />
 
         <nav className="hidden items-center gap-4 text-sm lg:flex">
           {NAV.map((item) => (
