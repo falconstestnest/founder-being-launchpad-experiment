@@ -31,7 +31,9 @@
 /* Sharp system UI — images stay rectangular; no soft SaaS pills */
 button,
 a,
-input {
+input,
+textarea,
+select {
   border-radius: 0;
 }
 
