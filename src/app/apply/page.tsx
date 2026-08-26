@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { APPLY, COHORT, HOME, JIMMY_LINKEDIN, MODULES, SITE, TOOLS } from "@/lib/copy";
+import { APPLY, COHORT, HOME, JIMMY_LINKEDIN, MODULES, SITE } from "@/lib/copy";
 import { MEDIA } from "@/lib/media";
 
 export const metadata: Metadata = {
@@ -121,26 +121,6 @@ export default function ApplyPage() {
         <Link href="/curriculum" className="mt-4 inline-block text-sm text-mint hover:underline">
           Open full curriculum →
         </Link>
-      </section>
-
-      <section className="mt-14 border-t border-line pt-10">
-        <h2 className="text-xl font-semibold">Build with the tools founders actually use</h2>
-        <p className="mt-2 max-w-2xl text-sm text-muted">
-          Participants learn practical workflows with current founder tools — not
-          a software tutorial for its own sake.
-        </p>
-        <ul className="mt-6 grid gap-2 sm:grid-cols-2">
-          {TOOLS.map((t) => (
-            <li key={t.name} className="border border-line bg-panel px-4 py-3 text-sm">
-              <span className="font-semibold">{t.name}</span>
-              <span className="ml-2 text-muted">{t.use}</span>
-            </li>
-          ))}
-        </ul>
-        <p className="mt-4 text-xs text-muted">
-          Tools may evolve by cohort. We teach workflows and judgment, not
-          dependence on one software product.
-        </p>
       </section>
 
       <section className="mt-14 border-t border-line pt-10">
