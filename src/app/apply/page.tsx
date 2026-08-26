@@ -61,8 +61,9 @@ export default function ApplyPage() {
             src={MEDIA.founder.src}
             alt={MEDIA.founder.alt}
             fill
+            priority
             sizes="(max-width:1024px) 100vw, 40vw"
-            className="object-cover object-top"
+            className="object-cover object-[center_18%]"
           />
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-bg via-bg/80 to-transparent p-4">
             <p className="mono text-[0.65rem] text-gold">{MEDIA.founder.credit}</p>

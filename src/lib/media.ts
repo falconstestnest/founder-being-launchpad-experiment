@@ -27,8 +27,8 @@ export const MEDIA = {
     credit: "TEMP · PLACE",
   },
   founder: {
-    src: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1000&q=80",
-    alt: "Founder portrait placeholder — replace with Jimmy",
-    credit: "TEMP · Replace with Jimmy",
+    src: "/images/jimmy-james.jpg",
+    alt: "Jimmy James, Founder and Programme Lead of Founder-Being LaunchPad",
+    credit: "FOUNDER",
   },
 } as const;
