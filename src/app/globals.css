@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  /* LaunchPad colours, Musk density: less chrome, more signal */
+  --bg: #000000;
+  --bg-2: #0b1020;
+  --panel: #111111;
+  --fg: #ffffff;
+  --muted: #8a8a8a;
+  --line: #222222;
+  --mint: #6ee7b7;
+  --mint-ink: #04160f;
+  --gold: #c9a227;
+  --warn: #ff3b30;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-panel: var(--panel);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-mint: var(--mint);
+  --color-gold: var(--gold);
+  --color-warn: var(--warn);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Sharp system UI — images stay rectangular; no soft SaaS pills */
+button,
+a,
+input {
+  border-radius: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: var(--mint);
+  color: var(--mint-ink);
+}
+
+.mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  letter-spacing: 0;
+}
